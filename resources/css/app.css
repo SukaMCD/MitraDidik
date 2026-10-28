@@ -1,12 +1,90 @@
 @import 'tailwindcss';
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
 @source "../**/*.blade.php";
 @source "../**/*.js";
 @source "../**/*.vue";
 
-@theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+:root {
+  /* Design Tokens - Palet Inti MitraDidik (Gaya Google Classroom) */
+  --primary: #1A73E8;
+  --primary-dark: #1557B0;
+  --primary-soft: #E8F0FE;
+  --background: #F0F4F9;
+  --surface: #FFFFFF;
+  --border: #DADCE0;
+  --text: #202124;
+  --text-muted: #5F6368;
+
+  /* Warna Status Fungsional */
+  --status-hadir: #188038;
+  --status-terlambat: #F9AB00;
+  --status-izin: #1A73E8;
+  --status-sakit: #E8710A;
+  --status-alpa: #D93025;
+  --status-sudah: #188038;
+  --status-belum: #5F6368;
+  --status-dinilai: #1A73E8;
+  --status-merit: #0B8043;
+  --chat-held-bg: #FEF7E0;
+  --chat-held-text: #B06000;
+
+  /* Banner Mapel Konsisten */
+  --banner-matematika: #1A73E8;
+  --banner-ipa: #188038;
+  --banner-bindonesia: #C5221F;
+  --banner-binggris: #8430CE;
+  --banner-ips: #C26401;
+  --banner-pai: #0B8043;
+  --banner-pjok: #C2185B;
+  --banner-homeroom: #546E7A;
+}
+
+.dark {
+  --primary: #8AB4F8;
+  --primary-dark: #1A73E8;
+  --primary-soft: rgba(138, 180, 248, 0.15);
+  --background: #1E1F20;
+  --surface: #2D2E31;
+  --border: #3C4043;
+  --text: #E8EAED;
+  --text-muted: #9AA0A6;
+  --chat-held-bg: #3E3821;
+  --chat-held-text: #FDD663;
+}
+
+html {
+  background-color: var(--background);
+  color: var(--text);
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Classroom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #DADCE0;
+  border-radius: 4px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #3C4043;
 }

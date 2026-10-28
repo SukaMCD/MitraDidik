@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" fill="none" width="100%" height="100%">
+  <!-- White Logo for Dark Backgrounds -->
+  <g transform="translate(10, 10) scale(0.6)">
+    <path d="M50 12 C58 12 65 17 68 25 L73 37 C67 36 60 38 55 42 L42 27 C44 20 47 12 50 12 Z" fill="#8AB4F8" />
+    <circle cx="50" cy="22" r="7.5" fill="#FFFFFF" />
+    <path d="M22 68 C18 61 18 53 23 46 L35 41 C37 47 42 52 48 54 L34 74 C27 73 23 71 22 68 Z" fill="#FFFFFF" opacity="0.9" />
+    <circle cx="27" cy="62" r="7.5" fill="#FFFFFF" />
+    <path d="M78 68 C77 71 73 73 66 74 L52 54 C58 52 63 47 65 41 L77 46 C82 53 82 61 78 68 Z" fill="#81C995" />
+    <circle cx="73" cy="62" r="7.5" fill="#81C995" />
+    <circle cx="50" cy="50" r="6" fill="#FDD663" />
+  </g>
+  <text x="82" y="44" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="700" fill="#FFFFFF" letter-spacing="-0.5">Mitra<tspan fill="#8AB4F8">Didik</tspan></text>
+  <text x="83" y="62" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="500" fill="#E8EAED" opacity="0.85">Bermitra mendampingi tumbuh kembang siswa</text>
+</svg>
+

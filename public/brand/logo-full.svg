@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" fill="none" width="100%" height="100%">
+  <defs>
+    <linearGradient id="lfGuru" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#4285F4"/>
+      <stop offset="100%" stop-color="#1A73E8"/>
+    </linearGradient>
+    <linearGradient id="lfParent" x1="0%" y1="20%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#1A73E8"/>
+      <stop offset="100%" stop-color="#1557B0"/>
+    </linearGradient>
+    <linearGradient id="lfChild" x1="0%" y1="80%" x2="100%" y2="20%">
+      <stop offset="0%" stop-color="#34A853"/>
+      <stop offset="100%" stop-color="#188038"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Emblem Grup (Tinggi 60px, Sumbu X 10..70) -->
+  <g transform="translate(10, 10) scale(0.6)">
+    <!-- Simpul 1: Guru -->
+    <path d="M50 12 C58 12 65 17 68 25 L73 37 C67 36 60 38 55 42 L42 27 C44 20 47 12 50 12 Z" fill="url(#lfGuru)" />
+    <circle cx="50" cy="22" r="7.5" fill="#1A73E8" />
+
+    <!-- Simpul 2: Orang Tua -->
+    <path d="M22 68 C18 61 18 53 23 46 L35 41 C37 47 42 52 48 54 L34 74 C27 73 23 71 22 68 Z" fill="url(#lfParent)" />
+    <circle cx="27" cy="62" r="7.5" fill="#1557B0" />
+
+    <!-- Simpul 3: Siswa -->
+    <path d="M78 68 C77 71 73 73 66 74 L52 54 C58 52 63 47 65 41 L77 46 C82 53 82 61 78 68 Z" fill="url(#lfChild)" />
+    <circle cx="73" cy="62" r="7.5" fill="#188038" />
+
+    <!-- Pusat Konektivitas -->
+    <circle cx="50" cy="50" r="6" fill="#F9AB00" />
+  </g>
+
+  <!-- Tipografi MitraDidik -->
+  <text x="82" y="44" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="700" fill="#202124" letter-spacing="-0.5">Mitra<tspan fill="#1A73E8">Didik</tspan></text>
+  
+  <!-- Tagline -->
+  <text x="83" y="62" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="500" fill="#5F6368" letter-spacing="0.1">Bermitra mendampingi tumbuh kembang siswa</text>
+</svg>
+
